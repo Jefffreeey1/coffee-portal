@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #111;
+  color: #fff;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background: #000;
+}
+
+header h1 {
+  flex: 1;
+  text-align: center;
+  font-size: 28px;
+}
+
+#backBtn {
+  font-size: 18px;
+  padding: 12px 16px;
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.button-tile {
+  background: #222;
+  border-radius: 16px;
+  padding: 40px 20px;
+  text-align: center;
+  font-size: 26px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.button-tile:hover {
+  background: #333;
+}
+
+.recipe {
+  grid-column: 1 / -1;
+  background: #1a1a1a;
+  border-radius: 16px;
+  padding: 30px;
+  font-size: 22px;
+}
+
+.recipe h2 {
+  margin-top: 0;
+}
+
+.section {
+  margin-top: 20px;
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
